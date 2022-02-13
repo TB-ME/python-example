@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "pyexample"
+version = "0.1.0"
+description = "Example python project"
+authors = ["Thomas Bentham <thomascbentham@gmail.com>"]
+
+[tool.poetry.scripts]
+pyexample = "pyexample.__main__:cli"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pyzmq = "^22.3.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0.1"
+
+[tool.poetry-dynamic-versioning]
+enable = true
+vcs = "git"
+style = "semver"
+
+[build-system]
+requires = [
+    "poetry-core @ git+https://github.com/python-poetry/poetry-core.git@master",
+    "poetry-dynamic-versioning"
+]
+build-backend = "poetry.core.masonry.api"
