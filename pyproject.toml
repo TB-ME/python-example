@@ -1,6 +1,7 @@
 [tool.poetry]
 name = "pyexample"
-version = "0.1.0"
+# This version is required but it isn't used
+version = "0.0.0"
 description = "Example python project"
 authors = ["Thomas Bentham <thomascbentham@gmail.com>"]
 
